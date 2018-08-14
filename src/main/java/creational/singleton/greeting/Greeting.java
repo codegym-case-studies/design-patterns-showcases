@@ -10,7 +10,11 @@ public class Greeting {
 
     public static Greeting getGreeting() {
         if (theVeryGreatSuperOnlyGreeting == null) {
-            theVeryGreatSuperOnlyGreeting = new Greeting();
+            synchronized (Greeting.class) {
+                if (theVeryGreatSuperOnlyGreeting == null) {
+                    theVeryGreatSuperOnlyGreeting = new Greeting();
+                }
+            }
         }
         return theVeryGreatSuperOnlyGreeting;
     }
