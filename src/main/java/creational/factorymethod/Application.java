@@ -9,6 +9,12 @@ public class Application {
 
     public static void main(String[] args) {
         chaseThief();
+        chaseMice();
+    }
+
+    private static void chaseMice() {
+        Animal anMeowableAnimal = animalFactory.getAnAnimalThatMakeSoundLike("meow");
+        letItSound(anMeowableAnimal);
     }
 
     private static void chaseThief() {
