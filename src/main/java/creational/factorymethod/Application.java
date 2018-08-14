@@ -9,7 +9,7 @@ public class Application {
     }
 
     private static void chaseThief() {
-        Dog anWoofableAnimal = new Dog();
+        Animal anWoofableAnimal = new Dog();
         letItSound(anWoofableAnimal);
     }
 
