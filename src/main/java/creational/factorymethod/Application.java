@@ -5,7 +5,7 @@ import creational.factorymethod.animals.AnimalFactory;
 
 public class Application {
 
-    private static AnimalFactory animalFactory = new AnimalFactory();
+    private static AnimalFactory animalFactory = AnimalFactory.getInstance();
 
     public static void main(String[] args) {
         chaseThief();
