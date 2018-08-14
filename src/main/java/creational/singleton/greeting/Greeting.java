@@ -2,7 +2,7 @@ package creational.singleton.greeting;
 
 public class Greeting {
 
-    private static Greeting theVeryGreatSuperOnlyGreeting;
+    private static volatile Greeting theVeryGreatSuperOnlyGreeting;
 
     private Greeting() {
 
